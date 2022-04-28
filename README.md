@@ -1,31 +1,30 @@
 # data-selz-etal-2022
-This repository contains two download scripts (a bash version and a python version) to retrieve the data used by 
+This repository contains two download scripts (a bash version and a python version) to retrieve the data used by  
 Selz, T., M. Riemer, G. Craig, 2022: The transition from practical to intrinsic predictability of midlatitude weather. Journal of the Atmospheric Sciences.
 
-The paper considers 9 different experiments, with two repeated with a higher
-model resolution:
-    1.0000:    stochastic convection with 100% ICU, R2B6 and R2B7
-    1.0000_SV: stochastic convection with 100% ICU+singular vectors, R2B6
-    0.5000:    stochastic convection with  50% ICU, R2B6
-    0.2000:    stochastic convection with  20% ICU, R2B6
-    0.1000:    stochastic convection with  10% ICU, R2B6
-    0.0010:    stochastic convection with 0.1% ICU, R2B6 and R2B7
-    1.0000_Ti: deterministic convection with 100% ICU, R2B6
-    0.1000_Ti: deterministic convection with  10% ICU, R2B6
-    0.0010_Ti: deterministic convection with 0.1% ICU, R2B6
+The paper considers 9 different experiments, with two repeated with a higher model resolution:
+- 1.0000:    stochastic convection with 100% ICU, R2B6 and R2B7
+- 1.0000_SV: stochastic convection with 100% ICU+singular vectors, R2B6
+- 0.5000:    stochastic convection with  50% ICU, R2B6
+- 0.2000:    stochastic convection with  20% ICU, R2B6
+- 0.1000:    stochastic convection with  10% ICU, R2B6
+- 0.0010:    stochastic convection with 0.1% ICU, R2B6 and R2B7
+- 1.0000_Ti: deterministic convection with 100% ICU, R2B6
+- 0.1000_Ti: deterministic convection with  10% ICU, R2B6
+- 0.0010_Ti: deterministic convection with 0.1% ICU, R2B6
 
-ICU: Initial condition uncertainty derived from ECMWF's EDA system
-R2B6: ca. 40km model resolution
-R2B7: ca. 20km model resolution
+ICU: Initial condition uncertainty derived from ECMWF's EDA system 
+R2B6: ca. 40km model resolution 
+R2B7: ca. 20km model resolution 
 
-Every experiments consists of 12 cases (initialization times) and 5 members,
-giving 660 individual simulations in total. The data of each simulation is
-stored in a separate folder which is named:
-    output_<exp>_<case>_<resolution>_<member>
-<exp>: the experiment from the list above
-<case>: the case, i.e. the initial time (20161001, 20161101, ..., 20170901)
-<resolution>: R2B6 or R2B7
-<member>: 5 members (randomly selected from 1-50)
+Every experiments consists of 12 cases (initialization times) and 5 members, giving 660 individual simulations in total. The data of each simulation is stored in a separate folder which is named:
+
+    output_<exp>_<case>_<resolution>_<member>  
+        
+`<exp>`   the experiment from the list above  
+`<case>` the case, i.e. the initial time (20161001, 20161101, ..., 20170901)  
+`<resolution>` R2B6 or R2B7  
+`<member>` 5 randomly selected members from 1-50
 
 The directories of the 5 members are packed into one tar-file.
 
