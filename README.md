@@ -1,4 +1,4 @@
-## Instruction
+## Readme
 This repository contains two download scripts (a bash version and a python version) to retrieve the data used by 
 
 Selz, T., M. Riemer, G. Craig, 2022: The transition from practical to intrinsic predictability of midlatitude weather. Journal of the Atmospheric Sciences.
