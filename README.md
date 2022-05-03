@@ -45,7 +45,7 @@ The directories of the 5 members are packed into one tar-file, resulting in 132 
 
 After unpacking, in each folder the relevant simulation output is stored in multiple files, with `<ifile>` being a 4-digit consecutive number:
 
-`NWP_ERR_lonlat_PL_<ifile>.nc` contains 300hPa horizontal wind and geopotential for the kinetic energy-based error metrics
+`NWP_ERR_lonlat_PL_<ifile>.nc` contains 300hPa horizontal wind and geopotential for the kinetic energy-based error metrics  
 `NWP_UA_lonlat_ML_<ifile>.nc` contains the upper-air variables u, v, pv, temp, pres on model levels  
 `NWP_TEND_lonlat_ML_<ifile>.nc` contains the accumulated increments from the parameterization schemes since forecast start on model levels
 
