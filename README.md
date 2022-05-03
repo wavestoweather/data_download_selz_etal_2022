@@ -1,7 +1,7 @@
 ## Readme
 This text explains how to retrieve and use the data of
 
-Selz, T., M. Riemer, and G. Craig, 2022: The transition from practical to intrinsic predictability of midlatitude weather. Journal of the Atmospheric Sciences.
+Selz, T., M. Riemer, and G. Craig, 2022: The transition from practical to intrinsic predictability of midlatitude weather. Journal of the Atmospheric Sciences. https://www.doi.org/10.1175/JAS-D-21-0271.1
 
 ### Download of the data
 A bash script `data_download.sh` is provided int this repository for download. To download the entire dataset (132 tar-files, 4.4TB) copy the script into your target folder for the data and start it from there. To download only subsets of the data set you can modify the variables `exps` and `cases` in the download script accordingly. After download use
