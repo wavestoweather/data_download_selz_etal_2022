@@ -4,7 +4,7 @@ This text explains how to retrieve and use the data of
 Selz, T., M. Riemer, and G. Craig, 2022: The transition from practical to intrinsic predictability of midlatitude weather. Journal of the Atmospheric Sciences. https://www.doi.org/10.1175/JAS-D-21-0271.1
 
 ### Download of the data
-A bash script `data_download.sh` is provided in this repository for download. To download the entire dataset (132 tar-files, 4.4TB) copy the script into your target folder and execute it there. To download only a subset of the dataset you can modify the variables `exps` and `cases` in the download script accordingly. After download use
+A bash script `data_download.sh` is provided in this repository for download. To download the entire dataset (132 tar-files, 4.4TB in total) copy the script into your target folder and execute it there. To download only a subset of the dataset you can modify the variables `exps` and `cases` in the download script accordingly. After download use
 
     tar xvf <filename.tar>
     
@@ -32,7 +32,7 @@ plus two that are repeated at a higher resolution,
 `R2B6` approx. 40km model resolution  
 `R2B7` approx. 20km model resolution 
 
-Every experiments consists of 12 cases (initialization times) and 5 members, giving 660 individual simulations in total. The data of each simulation is stored in a separate folder which is named:
+Every experiment consists of 12 cases (initialization times) and 5 members, giving 660 individual simulations in total. The data of each simulation is stored in a separate folder which is named:
 
     output_<exp>_<case>_<resolution>_<member>  
         
@@ -58,4 +58,4 @@ The output is stored in the `NETCDF4`-format and has been compressed using the `
 Alternatively, the data can be read with the python-package `enstools`, which includes the necessary HDF5-plugins. This is also open-source and available at:
 - https://github.com/wavestoweather/enstools
 
-In case of problems or questions please contact forschungsdaten@uni-mainz.de.
+In case of problems or questions please contact forschungsdaten@uni-mainz.de or tobias.selz@lmu.de.
